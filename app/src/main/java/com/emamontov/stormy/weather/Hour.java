@@ -16,6 +16,35 @@ public class Hour implements Parcelable {
     private String mIcon;
     private String mTimezone;
 
+    public double getPrecipIntensity() {
+        return mPrecipIntensity * 25.4;
+    }
+
+    public void setPrecipIntensity(double precipIntensity) {
+        mPrecipIntensity = precipIntensity;
+    }
+
+    public double getWindSpeed() {
+        return mWindSpeed * 0.44704;
+    }
+
+    public void setWindSpeed(double windSpeed) {
+        mWindSpeed = windSpeed;
+    }
+
+    public double getPressure() {
+        return mPressure * 0.75006;
+    }
+
+    public void setPressure(double pressure) {
+        mPressure = pressure;
+    }
+
+    private double mPrecipIntensity;
+    private double mWindSpeed;
+    private double mPressure;
+
+
     public long getTime() {
         return mTime;
     }
@@ -80,6 +109,9 @@ public class Hour implements Parcelable {
         dest.writeDouble(mTemperature);
         dest.writeString(mIcon);
         dest.writeString(mTimezone);
+        dest.writeDouble(mPrecipIntensity);
+        dest.writeDouble(mWindSpeed);
+        dest.writeDouble(mPressure);
     }
 
     private Hour(Parcel in) {
@@ -88,6 +120,9 @@ public class Hour implements Parcelable {
         mTemperature = in.readDouble();
         mIcon = in.readString();
         mTimezone = in.readString();
+        mPrecipIntensity = in.readDouble();
+        mWindSpeed = in.readDouble();
+        mPressure = in.readDouble();
     }
 
     public Hour() {}
