@@ -11,4 +11,8 @@
     <string name="no_dailly_forecast_data">There is no data to display.</string>
     <string name="title_activity_hourly_forecast">HourlyForecastActivity</string>
     <string name="default_location">Default Location</string>
+    <string name="day_today">Today</string>
+    <string name="rain">" Rain: "</string>
+    <string name="wind">" Wind: "</string>
+    <string name="pressure">" Pressure: "</string>
 </resources>

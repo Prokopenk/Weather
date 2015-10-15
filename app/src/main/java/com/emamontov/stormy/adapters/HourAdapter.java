@@ -86,9 +86,9 @@ public class HourAdapter extends RecyclerView.Adapter<HourAdapter.HourViewHolder
                     time,
                     temperature,
                     summary);
-            message = message + " Rain: " + Math.round(mPrecipIntensity * 10.0) / 10.0;
-            message = message + " Wind: " + (int) Math.round(mWindSpeed);
-            message = message + " Pressure: " + (int) Math.round(mPressure);
+            message = message + mContext.getString(R.string.rain) + Math.round(mPrecipIntensity * 10.0) / 10.0;
+            message = message + mContext.getString(R.string.wind) + (int) Math.round(mWindSpeed);
+            message = message + mContext.getString(R.string.pressure) + (int) Math.round(mPressure);
             Toast.makeText(mContext, message, Toast.LENGTH_LONG).show();
         }
     }
