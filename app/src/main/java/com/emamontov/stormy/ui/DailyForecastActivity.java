@@ -45,7 +45,7 @@ public class DailyForecastActivity extends Activity {
                 String dayOfTheWeek = mDays[position].getDayOfTheWeek();
                 String conditions = mDays[position].getSummary();
                 String highTemp = mDays[position].getTemperatureMax() + "";
-                String message = String.format("On %s the high will be %s and it will be %s",
+                String message = String.format(getString(R.string.day_message_format),
                         dayOfTheWeek,
                         highTemp,
                         conditions);

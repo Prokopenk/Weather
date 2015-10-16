@@ -15,4 +15,6 @@
     <string name="rain">" Дождь: "</string>
     <string name="wind">" Ветер: "</string>
     <string name="pressure">" Давление: "</string>
+    <string name="daily_title">Погода на неделю</string>
+    <string name="day_message_format">%s : максимум  %s и %s</string>
 </resources>

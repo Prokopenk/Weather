@@ -15,4 +15,6 @@
     <string name="rain">" Rain: "</string>
     <string name="wind">" Wind: "</string>
     <string name="pressure">" Pressure: "</string>
+    <string name="daily_title">This Week\'s Weather</string>
+    <string name="day_message_format">On %s the high will be %s and it will be %s</string>
 </resources>
